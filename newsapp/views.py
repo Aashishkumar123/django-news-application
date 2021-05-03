@@ -28,7 +28,7 @@ def news(request):
 
 	headline_url = (r'https://newsapi.org/v2/top-headlines?'
        'country=us&'
-       'apiKey=1df6a30d5b6b45848b7ae27d8cb4ef39')
+       'apiKey=')
 
 	headline_response = requests.get(headline_url).json()
 	headline_author = []
