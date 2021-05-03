@@ -4,9 +4,9 @@ from django.core.paginator import Paginator
 # Create your views here.
 
 def news(request):
-	url = (r'https://newsapi.org/v2/top-headlines?'
+	url = (f'https://newsapi.org/v2/top-headlines?'
        'sources=bbc-news&'
-       'apiKey=1df6a30d5b6b45848b7ae27d8cb4ef39')
+       'apiKey=')
 
 	response = requests.get(url).json()
 	author = []
